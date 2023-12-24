@@ -22,21 +22,34 @@ window.onload = function () {
                 items.forEach(entry => {
                     let link = (entry.links[0].href)
 
-                    const container = document.createElement("div")
+                    const container = document.createElement('div')
                     container.className = "picture-container"
 
-                    const imgElement = document.createElement("img")
+                    const imgElement = document.createElement('img')
                     imgElement.src = link
-                    imgElement.width = 600
+                    imgElement.width = 800
 
 
-                    const textElement = document.createElement('div');
-                    textElement.className = 'text-container';
-                    textElement.textContent = entry.data[0].description;
+                    const textContainer = document.createElement('div');
+                    textContainer.className = 'text-container';
+
+                    const description = document.createElement('div')
+                    description.textContent = entry.data[0].description;
+                    description.className = 'inner-element'
+                    textContainer.appendChild(description)
+
+                    const details = document.createElement('div')
+                    let title = entry.data[0].title
+                    let date = entry.data[0].date_created
+                    
+                    details.innerHTML = `Title: ${title}<br><br>Date: ${date}`;
+                    details.className = 'inner-element'
+                    textContainer.appendChild(details)
+
 
 
                     container.appendChild(imgElement)
-                    container.appendChild(textElement)
+                    container.appendChild(textContainer)
                     pictureContainer.appendChild(container)
 
                 });
