@@ -2,7 +2,7 @@ window.onload = function () {
     let queryParameterValue = getQueryParameter('query');
     if (queryParameterValue) {
 
-        let url = `https://images-api.nasa.gov/search?keywords=${queryParameterValue}&media_type=image&page_size=500`;
+        let url = `https://images-api.nasa.gov/search?keywords=${queryParameterValue}&media_type=image&page_size=700`;
         fetch(url)
             .then(response => {
                 if (!response.ok) {
@@ -65,3 +65,4 @@ function getQueryParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
 }
+

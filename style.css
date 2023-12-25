@@ -1,11 +1,12 @@
 body {
     background-image: url(./assets/background.jpg);
-    background-size:cover;
+    background-size: cover;
     height: 100hv;
     margin-top: 20px;
 }
-html{
-    padding:0;
+
+html {
+    padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -23,16 +24,16 @@ html{
     margin-bottom: 10px;
 
     font-size: large;
+    font-family: 'Space Mono', monospace;
     color: #40a8d8;
 
     border: 2px solid black;
     border-radius: 10px;
-
     background-color: rgba(0, 0, 0, 0.3);
 
 }
 
-#searchDiv{
+#searchDiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,16 +47,50 @@ html{
 #searchButton {
     font-weight: bold;
     font-size: large;
-    color: #40a8d8; /* Text color for the button */
+    color: #40a8d8;
+    /* Text color for the button */
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
+
+    font-family: 'Space Mono', monospace;
 
     border: 2px solid black;
     padding: 14px 28px;
     border-radius: 10px;
     position: relative;
     top: 0;
-    max-width: 250px;
+    max-width: 80%;
     margin-right: 20px;
 
+}
+
+
+#nextStarts {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#headingNextStarts{
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 50%;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.startElement {
+    color: #40a8d8;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.blackLine{
+    border-top: 2px solid black;
+    margin: 10px 0;
 }
