@@ -39,8 +39,9 @@ html {
     align-items: center;
     margin: 0 auto;
     border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 30%;
 }
 
 
@@ -50,7 +51,7 @@ html {
     color: #40a8d8;
     /* Text color for the button */
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
 
     font-family: 'Space Mono', monospace;
 
@@ -61,7 +62,17 @@ html {
     top: 0;
     max-width: 80%;
     margin-right: 20px;
+    margin-left: 20px;
 
+}
+
+#inputDescription{
+    max-width: 40%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family:'Space Mono', monospace;
+    font-weight: bold;
 }
 
 
