@@ -1,7 +1,6 @@
 window.onload = function () {
     let queryParameterValue = getQueryParameter('query');
     if (queryParameterValue) {
-
         let url = `https://images-api.nasa.gov/search?keywords=${queryParameterValue}&media_type=image&page_size=700`;
         fetch(url)
             .then(response => {
