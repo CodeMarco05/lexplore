@@ -1,7 +1,7 @@
 window.onload = function () {
     let queryParameterValue = getQueryParameter('query');
     if (queryParameterValue) {
-        let url = `https://images-api.nasa.gov/search?keywords=${queryParameterValue}&media_type=image&page_size=700`;
+        let url = `https://images-api.nasa.gov/search?keywords=${queryParameterValue}&media_type=image&page_size=100`;
         fetch(url)
             .then(response => {
                 if (!response.ok) {
@@ -15,7 +15,11 @@ window.onload = function () {
                 // Handle the JSON response
                 let items = data.collection.items
 
-
+                if(items.length == 0){
+                    //No result
+                    window.location.href = "../noResults/noResult.html"
+                }
+                
                 console.log('API response:', items);
 
                 items.forEach(entry => {

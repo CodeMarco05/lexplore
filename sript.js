@@ -1,3 +1,9 @@
+function goToPOD(){
+    window.location.href = './pages/pod/index.html'
+}
+
+
+
 function commitInput() {
     // Get the input value
     const inputValue = document.getElementById('searchField').value;

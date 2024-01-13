@@ -1,0 +1,40 @@
+body {
+    background-image: url(../../../assets/background_pod_search.jpg);
+    height: 100hv;
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+}
+
+
+h1{
+    font-family: 'Space Mono', monospace;
+    font-size: 40px;
+}
+
+#image{
+    width: 98%;
+    border-radius: 10px;
+}
+
+#title{
+    font-family: 'Space Mono', monospace;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#explanation{
+    font-family: 'Space Mono', monospace;
+}
+
+#textDiv{
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 95%;
+}
+
+.spacer{
+    height: 30px;
+}

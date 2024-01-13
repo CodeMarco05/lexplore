@@ -1,6 +1,6 @@
 body {
-  background-image: url('../../assets/background_collection.jpg');
   height: 100hv;
+  background-image: url(../../assets/background_collection.jpg);
   margin-top: 20px;
 }
 
@@ -9,38 +9,32 @@ body {
 
 /* Add necessary styles for the layout */
 .picture-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  padding: 10px;
   border: 2px solid white;
   border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .picture-container >div{
-  /* targets only the next div*/
-  max-width: calc(100vw - 890px);
-  flex-wrap: wrap;
-  /* 50% width with some margin */
   box-sizing: border-box;
 }
 
 .picture-container img{
-  /* targets all the images in the descending structure*/
   max-width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
 
 .text-container { 
   padding: 10px;
-  margin-left: 10px;
   color: whitesmoke;
   background-color: grey;
-  font-size: larger;
+  font-size: 15px;
   border: 2px solid white;
   border-radius: 10px;
+  text-overflow: ellipsis;
   font-family: 'Space Mono', monospace;
 }
 

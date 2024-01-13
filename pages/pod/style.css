@@ -1,0 +1,49 @@
+body {
+    background-image: url(../../assets/background_pod_search.jpg);
+    height: 100hv;
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+}
+
+
+
+#labelForDate{
+    font-family: 'Space Mono', monospace;
+    font-size: 25px;
+}
+
+#dateForm{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#selectedDate{
+    margin-top: 4px;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+}
+
+.button{
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    border: 2px solid black;
+    padding: 10px;
+    width: 40%;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+#outerDiv{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+}
